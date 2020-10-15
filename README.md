@@ -14,3 +14,5 @@ presas de tecnologia do Brasil e do mundo e ao longo da formação,
 
 estudamos JavaScript, HTML, CSS, React, Node, Express.js, SQL, Git,
 entre outras linguagens e frameworks.
+
+Obrigada pela leitura. Até breve.
