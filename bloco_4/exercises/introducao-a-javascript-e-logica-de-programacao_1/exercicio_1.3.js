@@ -1,4 +1,6 @@
 let a = 40;
 let b = 5;
-let z = b * a;
-console.log(z);
+function sum(a, b) {
+    return (a + b);
+}
+console.log(sum(45,5));

@@ -1,5 +1,4 @@
 let n = 5;
-
 let symbol = '*'
 for (let line = 1; line <= n; line += 1) {
     outPut = '';
