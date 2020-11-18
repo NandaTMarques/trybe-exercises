@@ -14,9 +14,20 @@ function criaListaDeEstados() {
 criaListaDeEstados();
 
 
-document.getElementById("botaoEnvia").addEventListener("click", function(event){
-    event.preventDefault()
-    alert('Preencha os campos Obrigatórios.')
+const data = document.getElementById("dInicio");
+const botaoEnvia = document.getElementById("botaoEnvia");
+
+botaoEnvia.addEventListener("click", function(event) {
+    event.preventDefault();
+    const required = document.querySelectorAll("[required]");
+    for (let itemRequired = 0; itemRequired < required.length; itemRequired += 1) {
+      let input = required[itemRequired];
+      if (input.required) {
+        if (input.value === "") {
+            alert(`O campo ${input.name} é obrigatório!`);
+        }
+      }
+    }
 });
 
 
