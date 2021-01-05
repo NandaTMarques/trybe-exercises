@@ -1,19 +1,25 @@
-//Escreva a função findTheNeedle para passar nos testes já implementados.
 
-const assert = require('assert');
-// escreva a função findTheNeedle aqui
+const obj1 = {
+  title: 'My Title',
+  description: 'My Description',
+};
 
-let words = ['house', 'train', 'slide', 'needle', 'book'];
-let expected = 3;
-let output = findTheNeedle(words, 'needle');
-assert.strictEqual(output, expected);
+const obj2 = {
+  description: 'My Description',
+  title: 'My Title',
+};
 
-words = ['plant', 'shelf', 'arrow', 'bird'];
-expected = 0;
-output = findTheNeedle(words, 'plant');
-assert.strictEqual(output, expected);
+const obj3 = {
+  title: 'My Different Title',
+  description: 'My Description',
+};
 
-words = ['plant', 'shelf', 'arrow', 'bird'];
-expected = -1;
-output = findTheNeedle(words, 'plat');
-assert.strictEqual(output, expected);
+test('two objects (JSON) to check if they are identical or not', () => {
+  expect(obj1).toEqual(obj2);
+  expect(obj1).not.toEqual(obj3);
+})
+
+test('two objects (JSON) to check if they are identical or not', () => {
+  expect(obj1).toEqual(obj3);
+  expect(obj1).not.toEqual(obj2);
+});
