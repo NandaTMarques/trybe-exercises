@@ -4,7 +4,9 @@ function scripts() {
   const scripts = [
     {name: 'Calcula IMC', script: './imc5.js'},
     {name: 'Velocidade Média', script: './velocidade.js'},
-    {name: 'Jogo Advinhação', script: './sorteio.js'}
+    {name: 'Jogo Advinhação', script: './sorteio.js'},
+    {name: 'Fatorial de um número', script: './fatorial.js'},
+    {name: 'Número Fibonacci', script: './fibonacci.js'}
   ]
 
   const pergunta = scripts.map((script, index) => {
