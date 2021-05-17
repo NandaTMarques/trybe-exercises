@@ -9,7 +9,7 @@ function fatorialDeUmNumero() {
     for (let index = 1; index <= digiteUmNumero; index + 1) {
       fatorial = fatorial * index;
     }
-    console.log(`O fatorial do número ${digiteUmNumero} é ${fatorial}`);
+    return console.log(`O fatorial do número ${digiteUmNumero} é ${fatorial}`);
   } else {
     console.log('Digite um número maior que 0.')
   }
