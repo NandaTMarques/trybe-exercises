@@ -19,6 +19,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send(data)
 })
+// CRUD - cria, lê, atualiza e deleta dados
 
 app.get('/:id', (req, res) => {
   const result = data.filter((dataId) => dataId.id === req.params.id);
